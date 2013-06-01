@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 
-gem 'sass'
-gem 'rack-coffee'
+group :development do
+  gem 'sass'
+  gem 'coffee-script'
+  gem 'therubyracer'
+end
 
 group :test do
   gem 'rspec'
